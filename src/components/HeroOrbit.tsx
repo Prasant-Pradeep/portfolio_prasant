@@ -10,15 +10,15 @@ export const HeroOrbit = ({
       <div
         className=""
         style={{
-          transform: 'rotate(${rotation}deg)',
-          height: '${size}px',
-          width: '${size}px',
+          transform: `rotate(${rotation}deg)`,
+          height: `${size}px`,
+          width: `${size}px`,
         }}
       >
         <div
           className="inline-flex"
           style={{
-            transform: 'rotate(${rotation * -1}deg)',
+            transform: `rotate(${rotation * -1}deg)`,
           }}
         >
           {children}

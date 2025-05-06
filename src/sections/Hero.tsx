@@ -9,22 +9,30 @@ import { px } from "framer-motion";
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-      <div 
-        className="absolute inset-0 -z-30 opacity-5" 
+      <div
+        className="absolute inset-0 -z-30 opacity-5"
         style={{
-          backgroundImage: 'url(${grainImage.src})',
+          backgroundImage: `url(${grainImage.src})`,
         }}
       ></div>
+
       <div className="size-[620px] hero-ring"></div>
       <div className="size-[820px] hero-ring"></div>
       <div className="size-[1020px] hero-ring"></div>
       <div className="size-[1220px] hero-ring"></div>
+
       <HeroOrbit size={800} rotation={-72}>
-            <StarIcon className="size-28 text-emerald-300" />
+        <StarIcon className="size-28 text-emerald-300" />
       </HeroOrbit>
+
       <HeroOrbit size={550} rotation={20}>
-            <StarIcon className="size-12 text-emerald-300" />
+        <StarIcon className="size-12 text-emerald-300" />
       </HeroOrbit>
+
+      <HeroOrbit size={590} rotation={98}>
+        <StarIcon className="size-8 text-emerald-300" />
+      </HeroOrbit>
+
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
@@ -40,7 +48,8 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className=" max-w-lg mx-auto">
+
+        <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
             Building Exceptional User Experience
           </h1>
