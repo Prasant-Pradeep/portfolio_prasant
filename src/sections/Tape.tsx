@@ -7,6 +7,7 @@ const words = [
   "Interactive",
   "Scalable",
   "User Friendly",
+  "Responsive",
   "Maintainable",
   "Search Optimized",
   "Usable",
