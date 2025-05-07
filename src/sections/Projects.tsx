@@ -4,6 +4,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
+import grainImage from "@/assets/images/grain.jpg"
 
 const portfolioProjects = [
   {
@@ -46,7 +47,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <div>
+    <section className="pb-16">
       <div className="container">
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
@@ -61,7 +62,7 @@ export const ProjectsSection = () => {
           See how I transformed concepts into engagigndigital expereiences
         </p>
 
-        <div className="flex flex-col mt-10">
+        <div className=" mt-10 flex flex-col gap-20">
           {portfolioProjects.map((project) => (
             <div 
               key={project.title} 
@@ -69,9 +70,13 @@ export const ProjectsSection = () => {
               overflow-hidden after:z-10 after:content-[''] after:absolute 
               after:inset-0 after:outline-2 after:outline 
               after:-outline-offset-2 after:rounded-3xl after:outline-white/
-              20 px-8 pt-8"
+              20 px-8 pt-8 after:pointer-events-none"
             >
-              <div className="flex">
+                <div className="absolute inset-0 -z-10 opacity-5" 
+                  style={{
+                    backgroundImage: `url(${grainImage.src})`,
+                  }}
+                ></div>
                 <div className="bg-gradient-to-r from-emerald-300 to-sky-400
                 inline-flex gap-2 font-bold uppercase tracking-widest 
                 text-sm text-transparent bg-clip-text">
@@ -79,7 +84,7 @@ export const ProjectsSection = () => {
                   <span>&bull;</span>
                   <span>{project.year}</span>
                 </div>
-              </div>
+
 
               <h3 className="font-serif text-2xl mt-2">{project.title}</h3>
               <hr className="border-t-2 border-white/5 mt-4"/>
@@ -111,6 +116,6 @@ export const ProjectsSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
