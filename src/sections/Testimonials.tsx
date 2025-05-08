@@ -5,6 +5,7 @@ import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
+import grainImage from "@/assets/images/grain.jpg";
 
 const testimonials = [
   {
@@ -41,26 +42,39 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <div>
-      <SectionHeader 
-        eyebrow="Happy Clients" 
-        title="What Clients Say About Me" 
-        description="Don't just take my word for it. See what my clients have to say about my work."
-      />
+    <div className="py-16">
+      <div className="container">
+        <SectionHeader 
+          eyebrow="Happy Clients" 
+          title="What Clients Say About Me" 
+          description="Don't just take my word for it. See what my clients have to say about my work."
+        />
 
-      <div>
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.name} className="mb-8">
-            <Image 
-              src={testimonial.avatar} 
-              alt={testimonial.name} 
-              className="w-20 h-20 rounded-full mb-4"
-            />
-            <div className="font-bold text-lg">{testimonial.name}</div>
-            <div className="text-sm text-gray-500 mb-2">{testimonial.position}</div>
-            <p className="text-gray-700">{testimonial.text}</p>
-          </div>
-        ))}    
+        <div>
+          {testimonials.map((testimonial) => (
+            <div 
+              key={testimonial.name} 
+              className="bg-gray-800 rounded-3xl p-6 relative overflow-hidden z-0"
+            >
+              <div 
+                className="absolute inset-0 opacity-5 -z-10" 
+                style={{
+                  backgroundImage: `url(${grainImage.src})`,
+                }}
+              ></div>
+
+              <Image 
+                src={testimonial.avatar} 
+                alt={testimonial.name} 
+                className="w-20 h-20 rounded-full mb-4"
+              />
+
+              <div className="font-bold text-lg">{testimonial.name}</div>
+              <div className="text-sm text-gray-500 mb-2">{testimonial.position}</div>
+              <p className="text-gray-700">{testimonial.text}</p>
+            </div>
+          ))}    
+        </div>
       </div>
     </div>
   );
