@@ -5,7 +5,7 @@ import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
-import grainImage from "@/assets/images/grain.jpg";
+import { Card } from "@/components/Card";
 
 const testimonials = [
   {
@@ -52,27 +52,21 @@ export const TestimonialsSection = () => {
 
         <div>
           {testimonials.map((testimonial) => (
-            <div 
-              key={testimonial.name} 
-              className="bg-gray-800 rounded-3xl p-6 relative overflow-hidden z-0"
-            >
-              <div 
-                className="absolute inset-0 opacity-5 -z-10" 
-                style={{
-                  backgroundImage: `url(${grainImage.src})`,
-                }}
-              ></div>
-
-              <Image 
-                src={testimonial.avatar} 
-                alt={testimonial.name} 
-                className="w-20 h-20 rounded-full mb-4"
-              />
-
-              <div className="font-bold text-lg">{testimonial.name}</div>
-              <div className="text-sm text-gray-500 mb-2">{testimonial.position}</div>
-              <p className="text-gray-700">{testimonial.text}</p>
-            </div>
+            <Card key={testimonial.name}>
+              <div className="flex gap-4 items-center">
+                <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full"
+                  <Image 
+                    src={testimonial.avatar} 
+                    alt={testimonial.name} 
+                    className="=max-h-full" 
+                  />
+                <div>
+                  <div className="font-semibold">{testimonial.name}</div>
+                  <div className="text-sm text-white/40">{testimonial.position}</div>
+                </div>
+              </div>
+              <p className="mt-4 text-sm"> {testimonial.text}</p>
+            </Card>
           ))}    
         </div>
       </div>
