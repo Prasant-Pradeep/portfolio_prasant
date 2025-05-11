@@ -54,18 +54,19 @@ export const TestimonialsSection = () => {
           {testimonials.map((testimonial) => (
             <Card key={testimonial.name}>
               <div className="flex gap-4 items-center">
-                <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full"
+                <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full">
                   <Image 
                     src={testimonial.avatar} 
                     alt={testimonial.name} 
-                    className="=max-h-full" 
+                    className="max-h-full" 
                   />
+                </div>
                 <div>
                   <div className="font-semibold">{testimonial.name}</div>
                   <div className="text-sm text-white/40">{testimonial.position}</div>
                 </div>
               </div>
-              <p className="mt-4 text-sm"> {testimonial.text}</p>
+              <p className="mt-4 text-sm">{testimonial.text}</p>
             </Card>
           ))}    
         </div>
