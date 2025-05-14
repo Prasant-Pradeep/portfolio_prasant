@@ -12,6 +12,7 @@ import GithubIcon from "@/assets/icons/github.svg";
 import { TechIcon } from "@/components/TechIcon";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
+import { CardHeader } from "@/components/CardHeader";
 
 const toolboxItems =[
   {
@@ -81,40 +82,18 @@ export const AboutSection = () => {
       description="Learn more about who I am, what I do, and What inspires me" 
     />
     <div className="mt-20">
-      <Card>
-        <div className="flex flex-col">
-          <div className="inline-flex items-center gap-2">
-            <StarIcon classname="size-9 text-emerald-300"/>
-            <h3 className="font-serif text-3xl">My Reads</h3>
-          </div>
-          <p className="text-sm text-white/60 mt-2">
-            Explore the books shaping my perspectives.
-          </p>
+      <Card className="h-[320px]">
+        <CardHeader title="My Reads" description="Explore the books shaping my perspectives." />
+        <div className="w-40 mx-auto mt-8">
+          <Image src={bookImage} alt="Book cover" />
         </div>
-        <Image src={bookImage} alt="Book cover" />
       </Card>
       <Card>
-        <div>
-          <StarIcon />
-          <h3>My Toolbox</h3>
-          <p>Explore the technologies and tools I use to craft exceptional digital experiences .</p>
-        </div>
-        <div>
-          {toolboxItems.map(item => (
-            <div key={item.title}>
-              <TechIcon component={item.iconType}/>
-              <span>{item.title}</span>
-              </div>
+      <CardHeader title="My Toolbox" description="Explore the technologies and tools I use to craft exceptional digital experiences ." />
 
-          ))}
-        </div>
       </Card>
       <Card>
-        <div>
-            <StarIcon />
-            <h3>Beyond the Code</h3>
-            <p>Explore my Interests and Hobbies beyond the digital realm .</p>
-        </div>
+      <CardHeader title="Beyond the Code" description="Explore my Interests and Hobbies beyond the digital realm ." />
         <div>
           {hobbies.map(hobby => (
             <div key={hobby.title}>
