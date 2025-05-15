@@ -13,7 +13,7 @@ import { TechIcon } from "@/components/TechIcon";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
-
+import { ToolboxItems } from "@/components/ToolboxItems";
 const toolboxItems =[
   {
     title:"JavaScript",
@@ -81,23 +81,43 @@ export const AboutSection = () => {
       title="A Glimpse Into My World" 
       description="Learn more about who I am, what I do, and What inspires me" 
     />
-    <div className="mt-20">
+    <div className="mt-20 flex flex-col gap-8">
       <Card className="h-[320px]">
-        <CardHeader title="My Reads" description="Explore the books shaping my perspectives." />
+          <CardHeader 
+            title="My Reads" 
+            description="Explore the books shaping my perspectives." 
+          />
         <div className="w-40 mx-auto mt-8">
           <Image src={bookImage} alt="Book cover" />
         </div>
       </Card>
-      <Card>
-      <CardHeader title="My Toolbox" description="Explore the technologies and tools I use to craft exceptional digital experiences ." />
-
+      <Card className="h-[320px] p-0">
+        <CardHeader 
+          title="My Toolbox" 
+          description="Explore the technologies and tools I use to craft exceptional digital experiences ." 
+          className="px-6 pt-6"
+        />
+       <ToolboxItems items={toolboxItems} className="mt-6" />
+       <ToolboxItems 
+            items={toolboxItems} 
+            className="mt-6 -translate-x-1/2"
+            itemsWrapperClassName="-translate-x-1/2"
+         />
       </Card>
       <Card>
       <CardHeader title="Beyond the Code" description="Explore my Interests and Hobbies beyond the digital realm ." />
         <div>
           {hobbies.map(hobby => (
-            <div key={hobby.title}>
-              <span>{hobby.title}</span>
+            <div 
+              key={hobby.title} 
+              className="inline-flex items-center
+              gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 
+              rounded-full py-1.5"
+            >
+              <span className="font-medium
+              text-gray-950">
+                {hobby.title}
+              </span>
               <span>{hobby.emoji}</span>
             </div>
 
