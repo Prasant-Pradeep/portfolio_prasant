@@ -37,14 +37,14 @@ const config: Config = {
           },
         },
         'move-left': {
-          '0%':{
-            transform:'translateX(0%)'
-          }
-          '100%': {
-            transform: 'translateX(-50%)'
-          }
-        }
-      }
+          "0%":{
+            transform:"translateX(0%)",
+          },
+          "100%": {
+            transform: "translateX(-50%)",
+          },
+        },
+      },
 
     },
   },
