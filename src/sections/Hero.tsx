@@ -103,12 +103,14 @@ export const HeroSection = () => {
             Building Exceptional User Experience
           </h1>
 
-          <p className="mt-4 text-center text-white/60 md:text-lg">
-            I s        <HeroOrbit size={430} rotation={-14}>
-          <SparkleIcon className="size-8 text-emerald-300/20" />
-        </HeroOrbit>pecialize in transforming designs into functional, high-performing web applications.
-            Let’s discuss your next project.
-          </p>
+          <div className="mt-4 text-center text-white/60 md:text-lg">
+            I s        
+            <HeroOrbit size={430} rotation={-14}>
+              <SparkleIcon className="size-8 text-emerald-300/20" />
+            </HeroOrbit>
+            Specialize in transforming designs into functional, high-performing web applications.
+            Lets discuss your next project.
+          </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
@@ -119,7 +121,7 @@ export const HeroSection = () => {
 
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋</span>
-            <span className="font-semibold">Let's connect</span>
+            <span className="font-semibold">Lets connect</span>
           </button>
         </div>
       </div>
