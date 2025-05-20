@@ -16,6 +16,8 @@ import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
+import { useRef } from "react";
+
 const toolboxItems =[
   {
     title:"JavaScript",
