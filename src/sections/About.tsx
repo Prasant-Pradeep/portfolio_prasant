@@ -140,8 +140,8 @@ export const AboutSection = () => {
                 description="Explore my Interests and Hobbies beyond the digital realm."
                 className="px-6 py-6"
               />
-              <div className="relative flex-1 ref=
-              {constraintRef}">
+              <div className="relative flex-1" ref=
+              {constraintRef}>
                 {hobbies.map(hobby => (
                   <motion.div
                     key={hobby.title} 
