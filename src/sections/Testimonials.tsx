@@ -46,9 +46,9 @@ export const TestimonialsSection = () => {
     <div className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader 
-          eyebrow="Happy Clients" 
-          title="What Clients Say About Me" 
-          description="Don't just take my word for it. See what my clients have to say about my work."
+          eyebrow="Trusted Voices" 
+          title="What Teammates and Mentors Say About Me" 
+          description="Whether it&#39;s data modeling or debugging AI pipelines, here&#39;s how people describe our time working together."
         />
         
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">

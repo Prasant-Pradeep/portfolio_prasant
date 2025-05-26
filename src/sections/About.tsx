@@ -104,17 +104,28 @@ export const AboutSection = () => {
         <div className="mt-20 flex flex-col gap-8">
           {/* Top row */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3 md:gap-8">
-            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
+            <Card className="md:col-span-2 lg:col-span-1 flex flex-col justify-between px-6 py-6">
               <CardHeader 
-                title="My Reads" 
-                description="Explore the books shaping my perspectives." 
+                title="My Experiences" 
+                description="A journey through hands-on learning and real-world collaboration."
               />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={bookImage} alt="Book cover" />
+
+              <div className="flex flex-col gap-4 mt-4">
+                <div className="bg-emerald-100 text-gray-900 px-4 py-3 rounded-xl shadow-sm">
+                  <p className="font-semibold text-sm">Software Engineer Intern</p>
+                  <p className="text-xs text-gray-700">Conestoga SMART Centre</p>
+                </div>
+
+                <div className="bg-emerald-100 text-gray-900 px-4 py-3 rounded-xl shadow-sm">
+                  <p className="font-semibold text-sm">Barista</p>
+                  <p className="text-xs text-gray-700">Starbucks</p>
+                </div>
               </div>
             </Card>
 
-            <Card className="h-[320px] md:col-span-3 lg:col-span-2">
+
+            <Card className="md:col-span-3 lg:col-span-2 h-full flex flex-col justify-between py-6">
+
               <CardHeader 
                 title="My Toolbox" 
                 description="Explore the technologies and tools I use to craft exceptional digital experiences." 
