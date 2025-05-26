@@ -104,7 +104,7 @@ export const HeroSection = () => {
 
           <div className="z-10">
             <a
-              href="/resume.zip"
+              href="/resume.pdf"
               download
               className="inline-flex items-center gap-2 border border-white/15 text-white h-12 px-6 rounded-xl hover:bg-white/10 hover:text-white transition"
             >
