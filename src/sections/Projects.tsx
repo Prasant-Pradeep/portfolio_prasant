@@ -8,41 +8,43 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
 const portfolioProjects = [
+
   {
-    company: "Updating Soon",
-    year: "Updating Soon",
-    title: "Updating Soon",
+    company: "Harpa Global",
+    year: "2025",
+    title: "Matchmaking Application",
     results: [
-      { title: "---" },
-      { title: "---" },
-      { title: "---" },
-    ],
-    link: "",
-    image: darkSaasLandingPage,
-  },
-  {
-    company: "Updating Soon",
-    year: "Updating Soon",
-    title: "Updating Soon",
-    results: [
-      { title: "---" },
-      { title: "---" },
-      { title: "---" },
-    ],
-    link: "---",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Updating Soon",
-    year: "Updating Soon",
-    title: "Updating Soon",
-    results: [
-      { title: "---" },
-      { title: "---" },
-      { title: "---" },
+      { title: "Developed a full-stack AI-driven platform to match international businesses based on mission, industry, and trade goals." },
+      { title: "Implemented content-based and collaborative filtering using semantic embeddings (USE) and event co-attendance logic." },
+      { title: "Built with MERN stack, integrated MongoDB triggers, and deployed recommendation microservices using Docker and Flask." },
     ],
     link: "---",
     image: aiStartupLandingPage,
+  },
+
+  {
+    company: "Conestoga College",
+    year: "2025",
+    title: "Weapon Detecton Using YOLO",
+    results: [
+      { title: "Built a real-time object detection system using YOLOv4 to identify weapons in surveillance footage." },
+      { title: "Achieved 92%+ accuracy by training on a custom-labeled dataset and optimizing bounding box performance." },
+      { title: "Integrated OpenCV for video stream handling and alert generation, enhancing security surveillance efficiency." },
+    ],
+    link: "https://github.com/Prasant-Pradeep/Weapon_Detection_Using_YOLOV4",
+    image: darkSaasLandingPage,
+  },
+  {
+    company: "INeuron",
+    year: "2024",
+    title: "Cricket Team Analysis",
+    results: [
+      { title: "Analyzed player and match performance data to derive strategic insights for team selection and tactics." },
+      { title: "Used Python, pandas, and matplotlib to visualize performance metrics like strike rate, economy, and win contribution." },
+      { title: "Built predictive models to forecast match outcomes and recommend optimal lineups based on historical patterns." },
+    ],
+    link: "https://github.com/Prasant-Pradeep/Cricket_Team_Analysis",
+    image: lightSaasLandingPage,
   },
 ];
 
