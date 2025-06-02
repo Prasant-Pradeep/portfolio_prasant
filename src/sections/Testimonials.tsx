@@ -22,9 +22,9 @@ const testimonials = [
     avatar: memojiAvatar2,
   },
   {
-    name: "Updating Soon",
-    position: "Updating Soon",
-    text: "Updating Soon",
+    name: "Yasin Shah",
+    position: "Founder & CEO @ Technocolabs",
+    text: "During the internship, he was found to be proactive, punctual, and inquisitive and demonstrated a good work ethic and interpersonal skills. Mr. Prasant.P carried out all the tasks that were assigned by the company and he made sure to put in extra hours of effort and completed the work within the mentioned deadlines. Our team grouped him up with a few other interns to complete the company’s major project and we found out that Mr. Prasant.P exhibited profound team management and communication skills that helped him throughout the completion of the project. Besides this, he gained experience in numerous concepts in Data Analysis that enhanced his existing skillset. I am impressed by his professionalism and dedication. I definitely believe that he would be an excellent fit and will bring great laurels to any university or company that he applies to, in the near future.",
     avatar: memojiAvatar3,
   },
   {
