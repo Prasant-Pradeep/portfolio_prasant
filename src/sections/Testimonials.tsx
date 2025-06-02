@@ -34,9 +34,9 @@ const testimonials = [
     avatar: memojiAvatar4,
   },
   {
-    name: "Updating Soon",
-    position: "Updating Soon",
-    text: "Updating Soon",
+    name: "Astle Russell",
+    position: "Software Developer @ Deloitte",
+    text: "Prasant is a highly dedicated and passionate developer with a strong academic background in Data Science. Known for his relentless work ethic and commitment to excellence, he consistently delivers high-quality solutions that blend analytical thinking with practical implementation. His proficiency in data-driven technologies, combined with a deep curiosity for problem-solving, enables him to build innovative and efficient applications. Whether working independently or collaborating with a team, Prasant brings a results-oriented mindset and a continuous drive to learn and grow in the ever-evolving field of technology.",
     avatar: memojiAvatar5,
   },
 ];
