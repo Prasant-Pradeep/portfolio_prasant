@@ -109,6 +109,11 @@ export const AboutSection = () => {
                 title="My Experiences" 
                 description="A journey through hands-on learning and real-world collaboration."
               />
+              <div className="flex flex-col gap-4 mt-4">
+                <div className="bg-emerald-100 text-gray-900 px-4 py-3 rounded-xl shadow-sm">
+                  <p className="font-semibold text-sm">Software Developer</p>
+                  <p className="text-xs text-gray-700">Sustern</p>
+                </div>
 
               <div className="flex flex-col gap-4 mt-4">
                 <div className="bg-emerald-100 text-gray-900 px-4 py-3 rounded-xl shadow-sm">
@@ -120,6 +125,7 @@ export const AboutSection = () => {
                   <p className="font-semibold text-sm">Barista</p>
                   <p className="text-xs text-gray-700">Starbucks</p>
                 </div>
+              </div>
               </div>
             </Card>
 
